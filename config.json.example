@@ -1,0 +1,22 @@
+{
+	"port": 3002,
+	"hosts": [
+		{ 
+			"id"       : "Leaderboard",
+			"protocol" : "http", 
+			"host"     : "10.4.4.251", 
+			"port"     : 3000, 
+			"path"     : "/ruok"
+		},{
+			"id"       : "Bitlbee",
+			"protocol" : "tcp",
+			"host"     : "10.4.5.211",
+			"port"     : 6667
+		},{
+			"id"       : "Floorplan DB",
+			"protocol" : "tcp",
+			"host"     : "10.4.7.158",
+			"port"     : 27017
+		}
+	]
+}
