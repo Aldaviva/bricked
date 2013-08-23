@@ -1,0 +1,161 @@
+/*
+YUI 3.11.0 (build d549e5c)
+Copyright 2013 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ol,
+ul {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+q:before,
+q:after {
+  content: '';
+}
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+input,
+textarea,
+select {
+  *font-size: 100%;
+}
+legend {
+  color: #000000;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner,
+a::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+@font-face {
+  font-family: "Avenir 85";
+  src: url('../fonts/AvenirLTStd-Heavy.woff') format('woff');
+}
+body {
+  background: #f6f3f1 url('../images/grid_tile.png');
+  color: #262626;
+}
+.ServiceList {
+  margin: 128px;
+  margin-right: 0;
+}
+.ServiceList .service {
+  background: url('../images/white_panel.png') no-repeat bottom right;
+  display: inline-block;
+  font: 57.6px "Avenir 85";
+  height: 128px;
+  margin-right: 128px;
+  width: 640px;
+}
+.ServiceList .service .name {
+  color: #1a1a1a;
+  line-height: 128px;
+  padding: 42.666666666666664px;
+}
+.ServiceList .service .indicator {
+  background: url('../images/indicator_red.png') no-repeat 50% 50%;
+  border-radius: 9999px;
+  box-shadow: 0 3px 12px rgba(53, 29, 0, 0.23);
+  display: inline-block;
+  height: 128px;
+  vertical-align: top;
+  width: 128px;
+}
+.ServiceList .service.working .indicator {
+  background-image: url('../images/indicator_green.png');
+}

@@ -1,0 +1,35 @@
+.ServiceList {
+	margin       : @grid_size;
+	margin-right : 0;
+
+	.service {
+		background   : url('../images/white_panel.png') no-repeat bottom right;
+		display      : inline-block;
+		font         : (0.45*@grid_size) "Avenir 85";
+		height       : @grid_size;
+		margin-right : @grid_size;
+		width        : @grid_size * 5;
+
+		.name {
+			color       : hsl(0, 0%, 10%);
+			line-height : @grid_size;
+			padding     : 1/3 * @grid_size;
+		}
+
+		.indicator {
+			background     : url('../images/indicator_red.png') no-repeat 50% 50%;
+			border-radius  : 9999px;
+			box-shadow     : 0 3px 12px rgba(53, 29, 0, 0.23);
+			display        : inline-block;
+			height         : @grid_size;
+			vertical-align : top;
+			width          : @grid_size;
+		}
+
+		&.working {
+			.indicator {
+				background-image: url('../images/indicator_green.png');
+			}
+		}
+	}
+}
