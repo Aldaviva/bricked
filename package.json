@@ -1,6 +1,6 @@
 {
 	"name": "bricked",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"author": "Ben Hutchison <ben@aldaviva.com>",
 	"dependencies": {
 		"assert-plus"     : "0.1.4",
