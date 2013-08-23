@@ -5,6 +5,8 @@ Bricked is a script that polls your configured servers to check if they respond.
 
 Results are available through a JSON REST API as well as an HTML page.
 
+![Bricked](http://aldaviva.com/portfolio/artwork/bricked.jpg)
+
 ## Requirements
 
 * Node.js
