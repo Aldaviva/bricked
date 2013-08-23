@@ -5,17 +5,17 @@ Bricked is a script that polls your configured servers to check if they respond.
 
 Results are available through a JSON REST API as well as an HTML page.
 
-# Requirements
+## Requirements
 
 * Node.js
 
-# Configuration
+## Configuration
 
 Bricked is configured using `config.json` in the installation directory.
 
 An example configuration file is provided in `config.json.example`.
 
-## Configuration options
+### Configuration options
 
 <table>
   <tr>
@@ -91,7 +91,8 @@ An example configuration file is provided in `config.json.example`.
 
 ## Running
 
-    $ node path/to/bricked/ | bunyan
+    $ npm install
+    $ node . | bunyan
 
 ## REST API
 
@@ -115,8 +116,9 @@ An array of objects, each of which is a service. The service has the same attrib
 
 #### Example Response
 
+`Content-Type: application/json`
+
 ```json
-Content-Type: application/json
 [{
     "id": "Rollway",
 	"protocol": "http",
