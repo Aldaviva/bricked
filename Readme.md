@@ -11,6 +11,21 @@ Results are available through a JSON REST API as well as an HTML page.
 
 * Node.js
 
+## Installation
+
+1. Clone or download the repository:
+
+        $ git clone https://github.com/Aldaviva/bricked.git && cd bricked
+
+2. Install dependencies
+
+        $ npm install
+
+3. Configure
+
+        $ cp config.json.example config.json
+       	$ edit config.json
+
 ## Configuration
 
 Bricked is configured using `config.json` in the installation directory.
@@ -42,7 +57,7 @@ An example configuration file is provided in `config.json.example`.
   </tr>
   <tr>
 	<td><strong>services[].protocol</strong></td>
-	<td>Optional. Whether to test the service using <strong>ping</strong> (ICMP Ping), <strong>tcp</strong> (try to open a TCP socket), or <strong>http</strong> (GET request expecting 2xx or 3xx)</td>
+	<td>Optional. Whether to test the service using <strong>ping</strong> (ICMP Ping), <strong>tcp</strong> (try to open a TCP socket), or <strong>http</strong> (GET returning 2xx)</td>
 	<td><em>http</em></td>
   </tr>
   <tr>
@@ -93,7 +108,6 @@ An example configuration file is provided in `config.json.example`.
 
 ## Running
 
-    $ npm install
     $ node . | bunyan
 
 ## REST API
