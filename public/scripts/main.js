@@ -54,9 +54,12 @@
 	$(document.body).prepend(serviceListView.render());
 
 	serviceCollection.fetch();
-	//TODO replace with eventing
-	setInterval(function(){
-		serviceCollection.fetch();
-	}, 5*1000);
+	
+	var socket = io.connect(window.location.protocol+'//'+window.location.host);
+	socket.on('service:isWorking:change', function(service, isWorking, opts){
+		if(!opts.isStartup){
+			serviceCollection.get(service.id).set({ isWorking: isWorking });
+		}
+	});
 
 })();
