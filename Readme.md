@@ -137,4 +137,4 @@ A graphical HTML view of the service state is accessible from the root of the we
 
     http://127.0.0.1:3000/
 
-It updates every 5 seconds.
+It updates using push notifications from the server.
