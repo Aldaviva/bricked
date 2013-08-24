@@ -13,7 +13,7 @@ Results are available through a JSON REST API as well as an HTML page.
 
 ## Installation
 
-1. Clone or download the repository:
+1. Clone or download the repository
 
         $ git clone https://github.com/Aldaviva/bricked.git && cd bricked
 
